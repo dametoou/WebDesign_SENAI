@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62,5%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(243deg, #010031 0%, #000381 50%, #010031 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: normal;
+    position: absolute;
+    top: 2.7rem;
+}
+
+input {
+    width: 17.5rem;
+    height: 3rem;
+    border: none;
+    border-bottom: .1rem black solid;
+    font-size: 1.1rem;
+}
+
+.container {
+    background-color: #fff;
+    width: 25rem;
+    height: 32rem;
+    border-radius: 3.6875rem;
+    background: #FFF;
+    box-shadow: 4px 4px 50px 0px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.campos {
+    max-height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+}
+
+.opcs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 11rem;
+    align-items: center;
+}
+
+.opcs button {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 3.125rem;
+    background: #C2C0FF;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.opcs a {
+    color: #05009d;
+}

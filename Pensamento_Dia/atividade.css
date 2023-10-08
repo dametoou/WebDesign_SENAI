@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background: url(bg.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-size: 1.3rem;
+    font-family: monospace;
+}
+
+.vidro {
+    max-width: 50rem;
+    min-height: 10rem;
+    height: 8.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 1.5em;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em;
+    color: white;
+    backdrop-filter: blur(2.5px);
+    overflow: hidden;
+}
+
+.text {
+    position: relative;
+    top: 10rem;
+    transition: 1s;
+}
+
+.vidro:hover .text{
+    top: 0;
+}
+
+.text > p {
+    margin: 1.5rem 0;
+}

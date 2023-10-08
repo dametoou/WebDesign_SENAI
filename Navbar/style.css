@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+
+img { /*tamanho da img*/
+    width: 4rem;
+}
+
+.menu { /*cor de fundo e definindo o position*/
+    border-bottom: .1rem red solid;
+    position: relative;
+    padding: .5rem;
+}
+
+.logo { /*posicionamento da img*/
+    position: absolute;
+    left: 48%;
+}
+
+.menu ul { /*lista em flex*/
+    display: flex;
+    padding: 1.5rem;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu a { /*arrumar o texto da lista*/
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0 .5rem .3rem .5rem;
+}
+
+.menu a::after { /*animação de barra*/
+    content: " ";
+    width: 0;
+    height: .2rem;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+
+.menu a:hover::after { /*ativação da animação*/
+    width: 100%;
+}
